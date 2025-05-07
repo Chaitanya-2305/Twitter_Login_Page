@@ -1,0 +1,188 @@
+* { 
+    box-sizing: border-box; 
+    margin: 0; 
+    padding: 0; 
+    font-family: 'Roboto', sans-serif; 
+}
+body{
+    background-color: gray;
+}
+.container{
+    width: 560px; 
+    height: 520px; 
+    background: #fff; 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    border-radius: 15px; 
+    display: flex; 
+    /* overflow: auto; */
+    flex-direction: column; 
+    justify-content: space-evenly; 
+    padding: 1rem; 
+}
+.contain{
+    overflow: auto;
+}
+.container .header{
+    position: sticky;
+    background-color: #fff;
+}
+.container header i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container header i{
+    /* margin-right: 50px; */
+    margin-left: 20px;
+    margin-top: 10px;
+}
+.container h1{
+    font-family: 'Chirp', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 32px; 
+    margin-top: 50px;
+    margin-left: 110px;
+}
+.signs {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.btn {
+    width: 55%;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.365);
+    border-radius: 20px;
+    text-decoration: none;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.google img {
+    margin-right: 5px;
+}
+
+.google{
+    color: hsl(0, 1%, 23%);
+    margin-top: 30px;
+}
+.apple{
+    color: black;
+    font-weight: bold;
+}
+.signs :hover{
+    background-color: #55555528;
+}
+.divider {
+    display: flex;
+    align-items: center;
+    width: 60%;
+    margin: 10px 0;
+    margin-top: 20px;
+    margin-left: 110px;
+}
+
+.divider::before,
+.divider::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background-color: #ccc;
+    margin: 0 10px;
+}
+
+.divider span {
+    font-size: 20px;
+    color: #555;
+}
+.input { 
+    position: relative; 
+    width: 100%; 
+    height: 60px; 
+    margin-top: 20px;
+    margin-bottom: 0.7em; 
+} 
+.box input{ 
+    width: 55%; 
+    height: 50px; 
+    padding-top: 20px; 
+    padding-left: 9px; 
+    outline: none; 
+    margin-left: 130px;
+    border: 1px solid #8c8c8c; 
+    border-radius: 3px; 
+    transition: .2s; 
+} 
+.box label{ 
+    position: absolute;
+    margin-left:140px ;
+    top: 30%;
+    left: 10px; 
+    font-size: 1.1rem; 
+    color: #8c8c8c; 
+    transition: .2s; 
+} 
+.input input:focus ~ label, 
+.input input:valid ~ label{ 
+    top: 10%; 
+    font-size: .8rem; 
+    color:#3287dc; 
+} 
+.input input:focus { 
+    border-width: 2px; 
+    border-color: #3287dc; 
+} 
+.nbtn button{
+    width: 55%;
+    height: 40px;
+    background-color: black;
+    color: white;
+    font-weight: bolder;
+    font-size: medium;
+    border: 0px;
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-left: 130px;
+}
+.fbtn button{
+    width: 55%;
+    height: 40px;
+    background-color: #fff;
+    color: black;
+    font-weight: bolder;
+    font-size: medium;
+    border: 1px solid gray;
+    border-radius: 20px;
+    margin-top: 25px;
+    margin-left: 130px;
+}
+.fbtn :hover{
+    background-color: #76757523;
+}
+.nbtn :hover{
+    background-color:rgb(33, 32, 32);
+}
+.join{
+    margin-left: 130px;
+    margin-top: 80px;
+    color: gray;
+}
+.join a{
+    color: #3287dc;
+    margin-left: 5px;
+    text-decoration: none;
+}
+.join a:hover{
+    text-decoration: underline;
+}
